@@ -1,5 +1,3 @@
 en:
   site_settings:
-    data_explorer_max_enabled: "Enable to increase (or decrease) Data Explorer query size"
-    data_explorer_max_query_result_default_limit: "Limit for UI"
-    data_explorer_max_query_result_max_limit: "Limit for CSV and JSON downloads"
+    data_explorer_max_enabled: "Enable to increase Data Explorer query size limits"
