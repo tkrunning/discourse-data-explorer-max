@@ -1,0 +1,10 @@
+plugins:
+  data_explorer_max_enabled:
+    default: false
+    client: true
+  data_explorer_max_query_result_default_limit:
+    default: 100000
+    client: true
+  data_explorer_max_query_result_max_limit:
+    default: 1000000
+    client: true
