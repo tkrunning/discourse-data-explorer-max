@@ -4,10 +4,14 @@
 # authors: Thomas K. Running
 # url: https://github.com/tkrunning/discourse-data-explorer-max
 
+enabled_site_setting :data_explorer_max_enabled
+
 module ::DataExplorer
-  QUERY_RESULT_DEFAULT_LIMIT = 100000
-  QUERY_RESULT_MAX_LIMIT = 1000000
-  # QUERY_RESULT_DEFAULT_LIMIT = SiteSetting.data_explorer_max_query_result_default_limit
-  # QUERY_RESULT_MAX_LIMIT = SiteSetting.data_explorer_max_query_result_max_limit
-  
+  if SiteSetting.data_explorer_max_query_result_default_limit
+    QUERY_RESULT_DEFAULT_LIMIT = SiteSetting.data_explorer_max_query_result_default_limit
+    QUERY_RESULT_MAX_LIMIT = SiteSetting.data_explorer_max_query_result_max_limit
+  else
+    QUERY_RESULT_DEFAULT_LIMIT = 1
+    QUERY_RESULT_MAX_LIMIT = 1000000
+  end
 end

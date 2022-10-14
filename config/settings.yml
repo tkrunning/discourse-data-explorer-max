@@ -1,6 +1,6 @@
 plugins:
   data_explorer_max_enabled:
-    default: false
+    default: true
     client: true
   data_explorer_max_query_result_default_limit:
     default: 100000
