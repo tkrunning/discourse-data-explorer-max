@@ -6,7 +6,8 @@
 
 enabled_site_setting :data_explorer_max_enabled
 
-# module ::DataExplorer
+module ::DataExplorer
 #   QUERY_RESULT_DEFAULT_LIMIT = 1
 #   QUERY_RESULT_MAX_LIMIT = 1000000
-# end
+  QUERY_RESULT_MAX_LIMIT = 1000000000
+end
