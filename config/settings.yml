@@ -2,3 +2,7 @@ plugins:
   data_explorer_max_enabled:
     default: true
     client: true
+  data_explorer_query_result_limit:
+    default: 100000
+    hidden: false
+    max: 1000000000
